@@ -1,45 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-
-<head>
-    <title>Parakeet App</title>
-    <meta charset="utf-8">
-    <meta naem="viewport" content="width=device-width, initial-scale=1">
-   <!-- <link rel="icon" href="butterfly.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" type="text/css">-->
-  
-
-</head>
+<header>
+    <script src="parakeet.js"></script>
+</header>
 
 <body>
-    <header></header>
-
-    </header>
-    <main>
-        <div class="form">
-            <form action="#" target="_blank" method="GET" id="urlForm">
-                <input type="text" name="URL" placeholder="Url" required="true">
-                <input type="text" name="startNumber" placeholder="Starting Number" required="true">
-                <input type="text" name="batchsize" placeholder="Batch Size" required="true">
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </form>
-            <button onclick="gotourl()">Try it</button>
-        </div>
-
-    </main>
-    <footer>
-        <script>
-            function gotourl(){
-            var x = document.getElementById("urlForm");
-            var y = x.element[0]+x.element[1]+x.element[2];
-            let url = new URL(y);
-            window.location.href = url;
-            }
-        </script>
-
-    </footer>
+    <form>
+        <h1> url</h1>
+        <input type="text">
+        <h1>starting int</h1>
+        <input type="text">
+        <h1>number of books</h1>
+        <input type="text">
+        <br />
+        <input type="submit" onclick="trygram()">
+    </form>
 </body>
 
 </html>
