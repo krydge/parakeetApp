@@ -14,7 +14,7 @@ function trygram() {
     for(i=0; i<numberof;i++){
         var urlnew = url2+start+"/pg"+start+".txt";
         start++;
-    }
+    
     //window.location.href=urlnew;
    var str = getText();
     //window.alert("got" + start + "  " + numberof);
@@ -24,6 +24,7 @@ function trygram() {
     HTTP.onreadystatechange = (e) => {
         console.log(Http.responseText)
     }
+}
 }
 
 function getText() {
